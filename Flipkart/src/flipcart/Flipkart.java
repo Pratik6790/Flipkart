@@ -69,7 +69,7 @@ public class Flipkart {
     public static void Screenshot(WebDriver driver, String FileName) throws IOException {
         File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         FileHandler.copy(srcFile, new File("..//Flipkart//Screenshots//" + FileName));
-        System.out.println("Screenshot saved successfully: " + FileName);
+        System.out.println("Screenshot saved successfully:" + FileName);
     }
 		
 	}
